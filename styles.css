@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #181818;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #fff;
+  z-index: 1000;
+  background-color: #181818;
+  z-index: 1000;
+}
+
+.menu-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-icon-hover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.menu-icon-hover-container:hover {
+  background-color: #383838;
+}
+
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.youtube-icon {
+  font-size: 25px;
+  color: #ff0000;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-lens-container {
+  display: flex;
+  align-items: center;
+  background-color: #383838;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 570px;
+}
+
+.search-lens-container:has(.search-field:focus) {
+  border: 2px solid #1a73e8;
+  padding-left: 20px;
+}
+
+.search-field {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.lens-icon-container {
+  width: 70px;
+  height: 40px;
+  background-color: #676767;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.glass-icon {
+  font-size: 16px;
+  color: #fff;
+}
+
+.mic-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #383838;
+  cursor: pointer;
+}
+
+.profile-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.create-button {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background-color: #383838;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.create-button:hover {
+  background-color: #676767;
+}
+
+.add-icon {
+  font-size: 16px;
+}
+
+.bell-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bell-icon-container:hover {
+  background-color: #383838;
+}
+
+.bell-icon-notification {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px 20px;
+  cursor: pointer;
+  color: #fff;
+  width: 250px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.left-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left-section::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.left-section::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #bbb, #888);
+  border-radius: 20px;
+}
+
+.left-section::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #999, #666);
+}
+
+.home-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.home-icon-container:hover {
+  background-color: #383838;
+}
+
+.home-icon-container-active {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #383838;
+}
+
+.left-section-icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.line {
+  width: 200px;
+  height: 1px;
+  background-color: #383838;
+  margin-top: 20px;
+}
+
+.main-section {
+  margin-left: calc(250px + 20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.video-tags {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background-color: #181818;
+  top: 60px;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 60px;
+  z-index: 999;
+  padding: 0 20px;
+}
+
+.video-tag-active {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #383838;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+}
+
+.video-tag {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #383838;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 30px;
+}
+
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 120px;
+  z-index: 0;
+}
+
+.video-container {
+  width: 380px;
+  height: 280px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.video-image {
+  border-radius: 10px;
+}
+
+.video-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.video-details {
+  display: flex;
+  gap: 10px;
+}
+
+.channel-logo {
+  border-radius: 50%;
+}
+
+.video-title-author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.video-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  font-weight: 500;
+}
+
+.video-author {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  font-weight: 500;
+}
+
+.video-stats {
+  display: flex;
+  gap: 5px;
+}
+
+.video-views {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  font-weight: 500;
+}
+
+.video-time {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  font-weight: 500;
+}

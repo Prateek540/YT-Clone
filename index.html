@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu-icons-container">
+        <span class="menu-icon-hover-container">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </span>
+        <i class="fa-brands fa-youtube youtube-icon"></i>
+      </div>
+      <div class="search-container">
+        <div class="search-lens-container">
+          <input type="text" placeholder="Search" class="search-field" />
+          <span class="lens-icon-container">
+            <i class="fa-solid fa-magnifying-glass glass-icon"></i>
+          </span>
+        </div>
+        <span class="mic-icon-container">
+          <i class="fa-solid fa-microphone"></i>
+        </span>
+      </div>
+      <div class="profile-icons-container">
+        <button class="create-button">
+          <i class="fa-solid fa-plus add-icon"></i> Create
+        </button>
+        <span class="bell-icon-container">
+          <i class="fa-solid fa-bell menu-icon"></i>
+          <span class="bell-icon-notification">2</span>
+        </span>
+        <i class="fa-solid fa-user menu-icon"></i>
+      </div>
+    </nav>
+    <section class="left-section">
+      <div class="home-section">
+        <span class="home-icon-container-active">
+          <i class="fa-solid fa-house home-icon left-section-icon"></i>
+          <p class="home-icon-text">Home</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-street-view left-section-icon"></i>
+          <p class="home-icon-text">Shorts</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-id-card left-section-icon"></i>
+          <p class="home-icon-text">Subscriptions</p>
+        </span>
+        <div class="line"></div>
+      </div>
+
+      <div class="home-section">
+        <span class="home-icon-container">
+          <h3 class="home-icon-text">You</h3>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-clock-rotate-left left-section-icon"></i>
+          <p class="home-icon-text">History</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-circle-play left-section-icon"></i>
+          <p class="home-icon-text">Playlists</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-play left-section-icon"></i>
+          <p class="home-icon-text">Your videos</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-clock left-section-icon"></i>
+          <p class="home-icon-text">Watch later</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-thumbs-up left-section-icon"></i>
+          <p class="home-icon-text">Liked videos</p>
+        </span>
+        <div class="line"></div>
+      </div>
+
+      <div class="home-section">
+        <span class="home-icon-container">
+          <h3 class="home-icon-text">Subscriptions</h3>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-user left-section-icon"></i>
+          <p class="home-icon-text">Carryminati</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-user left-section-icon"></i>
+          <p class="home-icon-text">Bhuvan Bam</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-user left-section-icon"></i>
+          <p class="home-icon-text">Harsh Beniwal</p>
+        </span>
+        <span class="home-icon-container">
+          <i class="fa-solid fa-list left-section-icon"></i>
+          <p class="home-icon-text">All subscriptions</p>
+        </span>
+        <div class="line"></div>
+      </div>
+    </section>
+    <main class="main-section">
+      <div class="video-tags">
+        <span class="video-tag-active">All</span>
+        <span class="video-tag">Comedy videos</span>
+        <span class="video-tag">Bollywood movies</span>
+        <span class="video-tag">Pranks</span>
+        <span class="video-tag">News</span>
+        <span class="video-tag">Funny videos</span>
+        <span class="video-tag">T-Series</span>
+        <span class="video-tag">Sad songs</span>
+        <span class="video-tag">hollywood movies</span>
+        <span class="video-tag">Facts videos</span>
+        <span class="video-tag">BBC</span>
+      </div>
+      <div class="video-section">
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <img
+            class="video-image"
+            src="https://marketplace.canva.com/EAEqfS4X0Xw/1/0/1600w/canva-most-attractive-youtube-thumbnail-wK95f3XNRaM.jpg"
+            alt="thumbnail"
+            width="380"
+            height="210"
+          />
+          <div class="video-info">
+            <div class="video-details">
+              <img
+                src="https://lh3.googleusercontent.com/a/ACg8ocKGiZGIntPfBySYZdXpLoZRqmUS4os6ZergJ5vIJRjrRMAhRujv=s576-c-no-nd-rp-mo"
+                alt="channel logo"
+                width="35"
+                height="35"
+                class="channel-logo"
+              />
+              <div class="video-title-author">
+                <p class="video-title">How to make a youtube thumbnail</p>
+                <p class="video-author">Roger Smith</p>
+                <div class="video-stats">
+                  <p class="video-views">100k views ·</p>
+                  <p class="video-time">2 days ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
